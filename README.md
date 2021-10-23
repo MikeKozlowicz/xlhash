@@ -16,3 +16,5 @@ See page 115 of http://www.openoffice.org/sc/excelfileformat.pdf for a descripti
 Compile: `gcc xlhash.c -o xlhash; chmod +x xlhash`
 
 Crack hash with dictionary: `cat wordlist| while read input; do if [ '83af' = $(echo $input |./xlhash) ]; then echo "Password is $input"; fi; done`
+
+(change `83af` to whatever hash you find in the sheet xml document)
